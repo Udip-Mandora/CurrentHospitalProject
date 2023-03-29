@@ -1,0 +1,20 @@
+﻿
+
+
+@model HospitalManagementSystem.Models.Service
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Show Service</h2>
+
+
+<a href="/Service/List">Go back to list</a>
+
+<br />
+
+<div>Name: @Model.ServiceName</div>
+
+<br />
+
+<a href="/Service/DeleteConfirm/@Model.ServiceId">DELETE</a>

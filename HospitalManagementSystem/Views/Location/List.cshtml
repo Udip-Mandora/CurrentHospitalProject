@@ -1,0 +1,21 @@
+﻿
+
+@model IEnumerable<HospitalManagementSystem.Models.Location>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<div style=" margin-top: 30px;">
+    <a style="border: 1px solid black; margin: 15px; padding: 15px; text-decoration: none; text-align: center; background-color: #47d147; color: black; " href="/Location/New">Add Location</a></a>
+</div>
+
+
+@foreach (var location in Model)
+{
+
+    <h2><a href="/Location/Details/@location.LocationId">@location.LocationName</a></h2>
+    <div>@location.LocationAddress</div>
+    <div>@location.LocationContactNo</div>
+}

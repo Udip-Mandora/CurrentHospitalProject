@@ -1,0 +1,15 @@
+﻿@model HospitalManagementSystem.Models.Department
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Show Department</h2>
+
+<br />
+
+<a href="/Department/List">Go back to list</a>
+<div>Name: @Model.DepartmentName</div>
+<br />
+
+<a href="/Department/DeleteConfirm/@Model.DepartmentId">DELETE</a>
+

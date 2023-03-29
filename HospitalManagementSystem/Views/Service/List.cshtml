@@ -1,0 +1,22 @@
+﻿
+
+
+
+@model IEnumerable<HospitalManagementSystem.Models.Service>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<div style=" margin-top: 30px;">
+    <a style="border: 1px solid black; margin: 15px; padding: 15px; text-decoration: none; text-align: center; background-color: #47d147; color: black; " href="/Service/New">Add Service</a>
+</div>
+
+
+@foreach (var service in Model)
+{
+
+    <h2><a href="/Service/Details/@service.ServiceId">@service.ServiceName</a></h2>
+
+}

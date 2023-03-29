@@ -38,9 +38,6 @@ namespace HospitalManagementSystem.Models
 
             public string JobDescription { get; set; }
 
-            public int DepartmentId { get; internal set; }
-            public int LocationId { get; internal set; }
-
             public string DepartmentName { get; set; }
 
         public string LocationName { get; set; }
