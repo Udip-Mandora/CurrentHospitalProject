@@ -26,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,12 +55,9 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -190,6 +188,8 @@
     <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\LocationDataController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\NewsDataController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\ServiceDataController.cs" />
     <Compile Include="Global.asax.cs">
@@ -219,13 +219,27 @@
     <Compile Include="Migrations\202303290051029_careers.designer.cs">
       <DependentUpon>202303290051029_careers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303311639309_202303290051029_careers.cs" />
+    <Compile Include="Migrations\202303311639309_202303290051029_careers.designer.cs">
+      <DependentUpon>202303311639309_202303290051029_careers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303311650091_Donations.cs" />
+    <Compile Include="Migrations\202303311650091_Donations.designer.cs">
+      <DependentUpon>202303311650091_Donations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304010059231_betterNews.cs" />
+    <Compile Include="Migrations\202304010059231_betterNews.designer.cs">
+      <DependentUpon>202304010059231_betterNews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Career.cs" />
     <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Donation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\News.cs" />
     <Compile Include="Models\Service.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -310,6 +324,12 @@
     <Content Include="Views\Career\Edit.cshtml" />
     <Content Include="Views\Career\Details.cshtml" />
     <Content Include="Views\Career\DeleteConfirm.cshtml" />
+    <Content Include="Views\News\List.cshtml" />
+    <Content Include="Views\News\Details.cshtml" />
+    <Content Include="Views\News\Edit.cshtml" />
+    <Content Include="Views\News\Error.cshtml" />
+    <Content Include="Views\News\New.cshtml" />
+    <Content Include="Views\News\DeleteConfirm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -345,6 +365,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303290051029_careers.resx">
       <DependentUpon>202303290051029_careers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303311639309_202303290051029_careers.resx">
+      <DependentUpon>202303311639309_202303290051029_careers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303311650091_Donations.resx">
+      <DependentUpon>202303311650091_Donations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304010059231_betterNews.resx">
+      <DependentUpon>202304010059231_betterNews.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

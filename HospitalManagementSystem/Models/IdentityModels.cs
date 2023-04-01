@@ -39,6 +39,13 @@ namespace HospitalManagementSystem.Models
         //Add a career entity to our system
         public DbSet<Career> Careers { get; set; }
 
+        //Add a news entity to our system
+        public DbSet<News> News { get; set; }
+
+        //Add a donation entity to our system
+        public DbSet<Donation> Donations { get; set; }
+
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
