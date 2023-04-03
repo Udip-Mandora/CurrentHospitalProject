@@ -184,6 +184,8 @@
     <Compile Include="Controllers\CareerDataController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\DepartmentDataController.cs" />
+    <Compile Include="Controllers\DonationsController.cs" />
+    <Compile Include="Controllers\DonationsDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\LocationDataController.cs" />
@@ -330,6 +332,12 @@
     <Content Include="Views\News\Error.cshtml" />
     <Content Include="Views\News\New.cshtml" />
     <Content Include="Views\News\DeleteConfirm.cshtml" />
+    <Content Include="Views\Donations\List.cshtml" />
+    <Content Include="Views\Donations\Details.cshtml" />
+    <Content Include="Views\Donations\Error.cshtml" />
+    <Content Include="Views\Donations\New.cshtml" />
+    <Content Include="Views\Donations\DeleteConfirm.cshtml" />
+    <Content Include="Views\Donations\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
